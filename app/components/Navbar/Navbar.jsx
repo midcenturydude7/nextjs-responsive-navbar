@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { GiHamburgerMenu } from "react-icons/gi"
+import { CgCloseO } from "react-icons/cg"
+
 import style from "./styles/Navbar.module.css"
 
 
@@ -13,30 +16,35 @@ const Navbar = () => {
         </svg>
       </Link>
 
-      <div>
+      <div className={style["desktop"]}>
         <ul className={style["nav-items"]}>
-          <li>
-            <Link href="#" className={style["link"]}>
+          <li className={style["nav-link"]}>
+            <Link href="#" className={style["active"]}>
               Home
             </Link>
           </li>
-          <li>
+          <li className={style["nav-link"]}>
             <Link href="#" className={style["link"]}>
               Work
             </Link>
           </li>
-          <li>
+          <li className={style["nav-link"]}>
             <Link href="#" className={style["link"]}>
               Resources
             </Link>
           </li>
-            <li>
+          <li className={style["nav-link"]}>
             <Link href="#" className={style["link"]}>
               Contact
             </Link>
           </li>
         </ul>
       </div>
+
+      <div className={style["mobile"]}>
+        <GiHamburgerMenu />
+      </div>
+
     </nav>
     </header>
   );
