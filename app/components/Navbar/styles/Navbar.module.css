@@ -37,11 +37,11 @@
   color: #f7f7f7;
 }
 
-.link, 
+.link,
 .active {
   position: relative;
   text-decoration: none;
-  transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out;
 }
 
 .link:hover,
@@ -60,6 +60,6 @@
   left: 0;
 }
 
-/* .mobile {
+.mobile {
   display: none;
-} */
+}
