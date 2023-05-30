@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  border: 1px solid #fff;
+}
+
+div ul.nav-items {
+  display: flex;
+  flex-direction: space-between;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+
+}
